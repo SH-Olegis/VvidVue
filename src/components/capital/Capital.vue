@@ -82,7 +82,7 @@ export default {
 .capital__text {
   @include clear-block;
   margin-bottom: 35px;
-  @include font(400, 22px, 29px, $main-font);
+  @include font(400, 22px, 29px, "Open Sans");
   color: #ffffff;
   @media all and(max-width: $screen-sm-max) {
     font-size: 12px;

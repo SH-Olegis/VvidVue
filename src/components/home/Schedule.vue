@@ -1,82 +1,81 @@
 <template>
   <section class="schedule">
     <div class="schedule__container">
-      <h2 class="schedule__title">Программа</h2>
+      <h2 class="schedule__title">{{ $t("schedule.Program") }}</h2>
       <table class="schedule__timetable timetable">
         <tr class="timetable__row">
           <td class="timetable__title">
-            Автоматизируем сервис-воркер с Workbox 6
+            {{ $t("schedule.AutomatingAService") }}
           </td>
           <td class="timetable__time">12:10</td>
           <td class="timetable__kind timetable__kind--report">
-            &lt;&nbsp;Доклад&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Report") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">
-            Палка, палка, огуречик. Рисуем персонажную анимацию на CSS
+            {{ $t("schedule.StickStickCucumber") }}
           </td>
           <td class="timetable__time">12:10–14:10</td>
           <td class="timetable__kind timetable__kind--workshop">
-            &lt;&nbsp;Воркшоп&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Workshop") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
-          <td class="timetable__title">Архитектура менеджера состояния</td>
+          <td class="timetable__title">{{ $t("schedule.StateManagerArchitecture") }}</td>
           <td class="timetable__time">12:55</td>
           <td class="timetable__kind timetable__kind--report">
-            &lt;&nbsp;Доклад&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Report") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">JSON: push the limits</td>
           <td class="timetable__time">13:40</td>
           <td class="timetable__kind timetable__kind--report">
-            &lt;&nbsp;Доклад&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Report") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">
-            Теория и практика dependency inversion
+            {{ $t("schedule.DependencyInversionTheory") }}
           </td>
           <td class="timetable__time">14:30–16:30</td>
           <td class="timetable__kind timetable__kind--workshop">
-            &lt;&nbsp;Воркшоп&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Workshop") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">
-            Пользовательский опыт незрячего человека
+            {{ $t("schedule.BlindPersonUser") }}
           </td>
           <td class="timetable__time">15:00</td>
           <td class="timetable__kind timetable__kind--report">
-            &lt;&nbsp;Доклад&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Report") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">
-            ES6-коллекции на примере V8: у ней внутре неонка
+            {{ $t("schedule.ES6CollectionsUsing") }}
           </td>
           <td class="timetable__time">15:45</td>
           <td class="timetable__kind timetable__kind--report">
-            &lt;&nbsp;Доклад&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Report") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">Расширяем реальность</td>
           <td class="timetable__time">16:30</td>
           <td class="timetable__kind timetable__kind--report">
-            &lt;&nbsp;Доклад&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Report") }}&nbsp;>
           </td>
         </tr>
         <tr class="timetable__row">
           <td class="timetable__title">
-            Создание приложений для голосовых ассистентов: тренды, возможности,
-            разработка
+            {{ $t("schedule.CreationOfApplications") }}
           </td>
           <td class="timetable__time">16:45–18:45</td>
           <td class="timetable__kind timetable__kind--workshop">
-            &lt;&nbsp;Воркшоп&nbsp;>
+            &lt;&nbsp;{{ $t("schedule.Workshop") }}&nbsp;>
           </td>
         </tr>
       </table>

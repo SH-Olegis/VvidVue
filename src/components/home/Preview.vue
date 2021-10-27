@@ -5,7 +5,7 @@
         <div class="preview__text-wrapper">
           <div class="preview__info-wrapper">
             <div class="preview__first-line">
-              <p class="preview__conf-small">международная конференция</p>
+              <p class="preview__conf-small">{{ $t("preview.InternationalConference") }}</p>
               <p>IT</p>
             </div>
             <p>
@@ -22,9 +22,9 @@
         </div>
         <div class="preview__link-wrapper">
           <a href="./registration.html" class="preview__link"
-            >Зарегистрироваться</a
+            >{{ $t("preview.RegisterNow") }}</a
           >
-          <p class="preview__date">&lt; 10 декабря ></p>
+          <p class="preview__date">&lt; 10 {{ $t("preview.December") }}  ></p>
         </div>
       </div>
     </div>

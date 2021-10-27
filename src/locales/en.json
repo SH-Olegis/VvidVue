@@ -9,5 +9,57 @@
     "WebsIsAn": "WebS is an international conference for JavaScript developers.",
     "WebsBringsTogether": "WebS brings together hundreds of JavaScript developers ready to discuss news from the rapidly developing ecosystem, fresh tools, frameworks and patterns with experts from Russia.",
     "WebsProvidesWorkshops": "WebS provides workshops and talks on technologies from front-end to back-end, an opportunity to communicate with those who create the world of JavaScript and participate in behind-the-scenes conversations, where the future is born."
+  },
+  "preview": {
+    "InternationalConference": "international Conference",
+    "RegisterNow": "Register now",
+    "December": "december"
+  },
+  "schedule": {
+    "Program": "Program",
+    "AutomatingAService": "Automating a service worker with Workbox 6",
+    "StickStickCucumber": "Stick, stick, cucumber. How to draw character animation with CSS",
+    "Workshop": "Workshop",
+    "Report": "Report",
+    "StateManagerArchitecture": "State manager architecture",
+    "DependencyInversionTheory": "Dependency inversion theory and practice",
+    "BlindPersonUser": "Blind person user experience",
+    "ES6CollectionsUsing": "ES6 collections using V8 as an example: it has a neon inside",
+    "CreationOfApplications": "Creation of applications for voice assistants: trends, opportunities, development"
+  },
+  "speakers": {
+    "MaximSalnikov": "Maxim Salnikov",
+    "ArtyomHarutyunyan": "Artyom Harutyunyan",
+    "GCAstral": "\nGC \"Astral\"",
+    "RomanDvornov": "Roman Dvornov",
+    "AnatolyPopko": "Anatoly Popko",
+    "DialogueInDark": "\"Dialogue in the Dark\"",
+    "AndreyPechkurov": "Andrey Pechkurov",
+    "VasilikaKlimova": "Vasilika Klimova",
+    "JuliaMiocen": "Julia Miocen",
+    "Yandex": "Yandex",
+    "AndreyMelikhov": "Andrey Melikhov",
+    "DmitryNikolaev": "Dmitry Nikolaev",
+    "AliceAwardWinner": "Alice Award Winner"
+  },
+  "wish": {
+    "DoYouWant": "Do you want to become a speaker?",
+    "IfYouAre": "If you are a developer and want to speak and share your experience, please fill out the form by November 11th.",
+    "MoreDetails": "More details"
+  },
+  "feedback": {
+    "HaveQuestions": "Have questions?",
+    "Name": "Name",
+    "Message": "Message",
+    "Submit": "Submit"
+  },
+  "features": {
+    "WhatAwaitsYou": "What awaits you:",
+    "TopSpeakers": "Top speakers",
+    "TheBestSpeakers": "The best speakers from large IT companies will share their best practices, which they themselves use in the development process.",
+    "Workshops": "Workshops",
+    "LearnMoreAbout": "\nLearn more about complex animation in CSS, understand what dependency inversion is, and write your own voice assistant app.",
+    "Atmosphere": "Atmosphere",
+    "HundredsOf": "\nHundreds of passionate developers and developers will meet together to watch reports from great speakers and participate in workshops."
   }
 }

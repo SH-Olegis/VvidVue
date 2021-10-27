@@ -3,11 +3,11 @@
     <div class="feedback__container">
       <div class="feedback__wrapper">
         <div class="feedback__info-wrapper">
-          <h2 class="feedback__title">Есть вопросы?</h2>
+          <h2 class="feedback__title">{{ $t("feedback.HaveQuestions") }}</h2>
           <form action="" class="feedback-form__form">
             <div class="feedback__inputs-wrapper">
               <div class="feedback-form__control">
-                <label for="feedback-firstname">Имя</label>
+                <label for="feedback-firstname">{{ $t("feedback.Name") }}</label>
                 <input type="text" id="feedback-firstname" />
               </div>
               <div class="feedback-form__control">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="feedback-form__control feedback-form__textarea-control">
-              <label for="message">Сообщение</label>
+              <label for="message">{{ $t("feedback.Message") }}</label>
               <textarea id="message" rows="4"></textarea>
             </div>
             <div class="feedback-form__submit">
@@ -25,7 +25,7 @@
                 class="feedback-form__btn feedback-form__btn_submit"
                 type="submit"
               >
-                Отправить
+                {{ $t("feedback.Submit") }}
               </button>
             </div>
           </form>
