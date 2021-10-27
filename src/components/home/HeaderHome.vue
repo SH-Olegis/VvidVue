@@ -40,6 +40,7 @@
               {{ $t("header.Contacts") }}</router-link
             >
           </li>
+          <LocaleSwitcher />
         </ul>
       </nav>
     </div>
@@ -47,8 +48,13 @@
 </template>
 
 <script>
+import LocaleSwitcher from "../../components/LocaleSwitcher";
+
 export default {
   name: "HeaderHome",
+  components: {
+    LocaleSwitcher,
+  },
 };
 </script>
 

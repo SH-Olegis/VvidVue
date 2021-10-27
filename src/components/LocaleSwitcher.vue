@@ -1,9 +1,9 @@
 <template>
-  <ul>
-    <li v-for="locale in locales" :key="locale" @click="switchLocale(locale)">
+  <select v-model="$i18n.locale">
+    <option v-for="locale in locales" :key="locale" @click="switchLocale(locale)">
       {{ locale }}
-    </li>
-  </ul>
+    </option>
+  </select>
 </template>
 
 <script>
@@ -26,10 +26,26 @@ export default {
 };
 </script>
 
-<style scoped>
-li {
-  text-decoration: underline;
-  color: #459ce7;
+<style scoped  lang="scss">
+@import "@/index.scss";
+
+select {
+  padding: 0 10px 0 20px;
+  @include font(400, 19px, 25px, $main-font);
+  color: #ffffff;
+  background-color: transparent;
+  border: 0;
+  text-transform: capitalize;
   cursor: pointer;
+
+  @media all and(max-width: $screen-sm-max) {
+    padding: 0 10px;
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
+
+option {
+  color: #000000;
 }
 </style>
