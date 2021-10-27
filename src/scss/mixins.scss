@@ -1,0 +1,58 @@
+@mixin font($font-weight, $font-size, $line-height, $font) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin clear-block {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-right: 87px;
+  padding-left: 87px;
+
+  @media all and (max-width: $screen-md-max) {
+     padding-right: 45px;
+     padding-left: 45px;
+   }
+
+  @media all and (max-width: $screen-sm-max) {
+     padding-right: 15px;
+     padding-left: 15px;
+  }
+}
+
+@mixin title {
+  @include clear-block;
+  @include font(700, 36px, 42px, 'Roboto');
+  color: #1b1e1d;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

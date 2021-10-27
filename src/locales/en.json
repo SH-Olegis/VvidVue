@@ -1,0 +1,13 @@
+{
+  "header": {
+    "Main": "Main",
+    "Program": "Program",
+    "Registration": "Registration",
+    "Contacts": "Contacts"
+  },
+  "introduction": {
+    "WebsIsAn": "WebS is an international conference for JavaScript developers.",
+    "WebsBringsTogether": "WebS brings together hundreds of JavaScript developers ready to discuss news from the rapidly developing ecosystem, fresh tools, frameworks and patterns with experts from Russia.",
+    "WebsProvidesWorkshops": "WebS provides workshops and talks on technologies from front-end to back-end, an opportunity to communicate with those who create the world of JavaScript and participate in behind-the-scenes conversations, where the future is born."
+  }
+}
