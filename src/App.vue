@@ -1,19 +1,8 @@
 <template>
   <div id="app">
-    <LocaleSwitcher />
     <router-view />
   </div>
 </template>
-
-<script>
-import LocaleSwitcher from "./components/LocaleSwitcher";
-
-export default {
-  components: {
-    LocaleSwitcher,
-  },
-};
-</script>
 
 <style lang="scss">
 #app {
