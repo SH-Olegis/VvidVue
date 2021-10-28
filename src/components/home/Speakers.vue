@@ -12,7 +12,7 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Максим Сальников</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.MaximSalnikov") }}</p>
           <p class="speakers__speaker-position">Microsoft</p>
         </li>
         <li class="speakers__item">
@@ -25,8 +25,8 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Артём Арутюнян</p>
-          <p class="speakers__speaker-position">ГК «Астрал»</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.ArtyomHarutyunyan") }}</p>
+          <p class="speakers__speaker-position">{{ $t("speakers.GCAstral") }}</p>
         </li>
         <li class="speakers__item">
           <div class="speakers__speaker-img-wrapper">
@@ -38,7 +38,7 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Роман Дворнов</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.RomanDvornov") }}</p>
           <p class="speakers__speaker-position">Wrike</p>
         </li>
         <li class="speakers__item">
@@ -51,8 +51,8 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Анатолий Попко</p>
-          <p class="speakers__speaker-position">«Диалог в Темноте»</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.AnatolyPopko") }}</p>
+          <p class="speakers__speaker-position">{{ $t("speakers.DialogueInDark") }}</p>
         </li>
         <li class="speakers__item">
           <div class="speakers__speaker-img-wrapper">
@@ -64,7 +64,7 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Андрей Печкуров</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.AndreyPechkurov") }}</p>
           <p class="speakers__speaker-position">Hazelcast</p>
         </li>
         <li class="speakers__item">
@@ -77,7 +77,7 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Василика Климова</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.VasilikaKlimova") }}</p>
           <p class="speakers__speaker-position">Avaloq</p>
         </li>
         <li class="speakers__item">
@@ -90,8 +90,8 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Юлия Миоцен</p>
-          <p class="speakers__speaker-position">Яндекс</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.JuliaMiocen") }}</p>
+          <p class="speakers__speaker-position">{{ $t("speakers.Yandex") }}</p>
         </li>
         <li class="speakers__item">
           <div class="speakers__speaker-img-wrapper">
@@ -103,7 +103,7 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Андрей Мелихов</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.AndreyMelikhov") }}</p>
           <p class="speakers__speaker-position">Arrival</p>
         </li>
         <li class="speakers__item">
@@ -116,8 +116,8 @@
               class="speakers__speaker-img"
             />
           </div>
-          <p class="speakers__speaker-name">Дмитрий Николаев</p>
-          <p class="speakers__speaker-position">Победитель «Премии Алисы»</p>
+          <p class="speakers__speaker-name">{{ $t("speakers.DmitryNikolaev") }}</p>
+          <p class="speakers__speaker-position">{{ $t("speakers.AliceAwardWinner") }}</p>
         </li>
       </ul>
     </div>
@@ -138,13 +138,17 @@ export default {
   padding-top: 220px;
   padding-bottom: 80px;
 
+  @media all and (max-width: $screen-sm-max) {
+    padding-top: 100px;
+  }
+
   &::before {
     content: "спикеры";
     position: absolute;
     z-index: -1;
     top: 0;
     left: 51%;
-    @include font(200, 150px, 170px, "Roboto");
+    @include font(200, 140px, 170px, "Roboto");
     text-align: center;
     letter-spacing: 0.25em;
     color: #dcd8d8;
@@ -172,6 +176,8 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
+
   @media all and (max-width: $screen-sm-max) {
     justify-content: center;
   }
@@ -181,16 +187,16 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 33.3%;
+  flex-basis: 29%;
   min-width: 250px;
 
   @media all and (max-width: $screen-sm-max) {
     margin-top: 10px;
   }
 
-  &:nth-of-type(n + 4) {
-    margin-top: 60px;
-  }
+  //&:nth-of-type(n + 4) {
+  //  margin-top: 60px;
+  //}
 }
 
 .speakers__speaker-img-wrapper {

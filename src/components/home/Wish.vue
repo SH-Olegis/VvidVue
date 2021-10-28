@@ -12,12 +12,11 @@
           />
         </div>
         <div class="wish__info-wrapper">
-          <h2 class="wish__title">Вы хотите стать спикером?</h2>
+          <h2 class="wish__title">{{ $t("wish.DoYouWant") }}</h2>
           <p class="wish__text">
-            Если вы разработчик и хотите выступить и поделиться своим опытом,
-            заполните форму до 11 ноября.
+            {{ $t("wish.IfYouAre") }}
           </p>
-          <a href="./registration.html" class="wish__link">Подробнее</a>
+          <router-link :to="{ name: 'Registration', params: { lang: this.$i18n.locale } }" class="wish__link">{{ $t("wish.MoreDetails") }}</router-link>
         </div>
       </div>
     </div>

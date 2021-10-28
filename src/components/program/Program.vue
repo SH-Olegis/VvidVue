@@ -10,7 +10,7 @@
             data-toggle-selector="reports"
             @click="program = true"
           >
-            Доклады
+            {{ $t("schedule.Report") }}
           </button>
         </li>
         <li class="program__menu-item">
@@ -21,7 +21,7 @@
             data-toggle-selector="workshops"
             @click="program = false"
           >
-            Воркшопы
+            {{ $t("schedule.Workshop") }}
           </button>
         </li>
       </ul>
@@ -38,22 +38,15 @@
                 alt="Фотография докладчика"
                 class="speaker__avatar"
               />
-              <p class="speaker__name">Максим Сальников</p>
+              <p class="speaker__name">{{ $t("speakers.MaximSalnikov") }}</p>
               <p class="speaker__position">Microsoft</p>
             </div>
             <div class="speaker__info">
               <p class="speaker__theme">
-                Автоматизируем сервис-воркер с Workbox 6
+                {{ $t("schedule.AutomatingAService") }}
               </p>
               <p class="speaker__theme-description">
-                «Задеплоил сервис-воркер — нужно покупать новый домен» —
-                известная шутка о том, как сложно писать собственную логику
-                кеширования. С приходом шестой версии библиотеки Workbox для
-                прогрессивных веб-приложений (PWA) больше не нужен компромисс
-                между гибкостью и удобством автоматизации сетевых задач. Я
-                расскажу, как начать работу с Workbox 6, реализовать типовую
-                функциональность для офлайнового веб-приложения и пойти дальше,
-                добавив собственную логику кеширования.
+                {{ $t("program.DeployedService") }}
               </p>
             </div>
           </li>
@@ -66,21 +59,13 @@
                 alt="Фотография докладчика"
                 class="speaker__avatar"
               />
-              <p class="speaker__name">Артём Арутюнян</p>
+              <p class="speaker__name">{{ $t("speakers.ArtyomHarutyunyan") }}</p>
               <p class="speaker__position">ГК «Астрал»</p>
             </div>
             <div class="speaker__info">
-              <p class="speaker__theme">Архитектура менеджера состояния</p>
+              <p class="speaker__theme">{{ $t("schedule.StateManagerArchitecture") }}</p>
               <p class="speaker__theme-description">
-                Стейт-менеджмент — многогранный подход, который позволяет как
-                обслуживать небольшие задачи для более детерминированного
-                описания вычислительных процессов, так и строить целые
-                архитектуры вокруг этого паттерна, чтобы решать проблемы
-                зацепленности кода и автоматически оптимизировать
-                производительность вычисления комплексных потоков данных.
-                Реализация стейт-менеджмента изобилует особенностями и
-                подводными камнями, которые в зависимости от задачи могут быть
-                актуальными или нет. Об этом и поговорим.
+                {{ $t("program.StateManagement") }}
               </p>
             </div>
           </li>
@@ -93,19 +78,13 @@
                 alt="Фотография докладчика"
                 class="speaker__avatar"
               />
-              <p class="speaker__name">Роман Дворнов</p>
+              <p class="speaker__name">{{ $t("speakers.RomanDvornov") }}</p>
               <p class="speaker__position">Wrike</p>
             </div>
             <div class="speaker__info">
               <p class="speaker__theme">JSON: push the limits</p>
               <p class="speaker__theme-description">
-                Формат JSON настолько прост — о чём тут можно говорить? И я так
-                думал, пока не попробовал делать то, чего обычно не делают, ведь
-                всё уже придумано до нас (спойлер: на самом деле нет). И
-                оказалось, что JSON — богатый и плохо изученный мир с
-                проблемами, которые можно решить, и это интересно. Доклад
-                основан на моей работе в этом направлении, в частности над
-                проблемами JSON большого (>100 MB) размера.
+                {{ $t("program.TheJSONFormat") }}
               </p>
             </div>
           </li>
@@ -118,18 +97,15 @@
                 alt="Фотография докладчика"
                 class="speaker__avatar"
               />
-              <p class="speaker__name">Анатолий Попко</p>
-              <p class="speaker__position">«Диалог в Темноте»</p>
+              <p class="speaker__name">{{ $t("speakers.AnatolyPopko") }}</p>
+              <p class="speaker__position">{{ $t("speakers.DialogueInDark") }}</p>
             </div>
             <div class="speaker__info">
               <p class="speaker__theme">
-                Пользовательский опыт незрячего человека
+                {{ $t("schedule.BlindPersonUser") }}
               </p>
               <p class="speaker__theme-description">
-                Отличается ли то, как зрячий и незрячий человек пользуются
-                сайтом, как воспринимают его и управляют интерфейсом? И да и
-                нет. В чём отличие и в чём сходство? Посмотрим на реальных
-                примерах и обсудим, как создаются барьеры.
+                {{ $t("program.OtlichayetsyaLiTo") }}
               </p>
             </div>
           </li>
@@ -142,28 +118,15 @@
                 alt="Фотография докладчика"
                 class="speaker__avatar"
               />
-              <p class="speaker__name">Андрей Печкуров</p>
+              <p class="speaker__name">{{ $t("speakers.AndreyPechkurov") }}</p>
               <p class="speaker__position">Hazelcast</p>
             </div>
             <div class="speaker__info">
               <p class="speaker__theme">
-                ES6-коллекции на примере V8: у ней внутре неонка
+                {{ $t("schedule.ES6CollectionsUsing") }}
               </p>
               <p class="speaker__theme-description">
-                В инструментарий JS-разработчиков прочно вошли коллекции
-                Map/Set, а также их Weak-вариации, появившиеся пять лет назад.
-                Ныне их можно встретить как в популярных библиотеках, так и в
-                Node.js core. При этом, как принято в ECMAScript, спецификация
-                не задаёт жёстких требований к реализации стандарта, а лишь
-                описывает поведение коллекций на высоком уровне, оставляя
-                JS-движкам пространство для манёвра. Встречаются случаи, когда
-                разработчику нужно понимать особенности реализации того же Map,
-                чтобы принять взвешенное решение. Именно это и будет темой
-                доклада. На примере V8 мы пройдёмся по конкретным алгоритмам, их
-                сложности в пресловутой big O нотации, расходу памяти и прочей
-                внутрянке коллекций Map/Set. Напоследок поговорим о том, как
-                именно работают Weak-коллекции и почему WeakMap !== Map +
-                WeakRef.
+                {{ $t("program.TheJSdevelopers") }}
               </p>
             </div>
           </li>
@@ -176,18 +139,13 @@
                 alt="Фотография докладчика"
                 class="speaker__avatar"
               />
-              <p class="speaker__name">Василика Климова</p>
+              <p class="speaker__name">{{ $t("speakers.VasilikaKlimova") }}</p>
               <p class="speaker__position">Avaloq</p>
             </div>
             <div class="speaker__info">
-              <p class="speaker__theme">Расширяем реальность</p>
+              <p class="speaker__theme">{{ $t("program.ExpandingReality") }}</p>
               <p class="speaker__theme-description">
-                Как давно мы смотрим фильмы о виртуальной реальности — и как
-                захватывающе она выглядит! Может, вы не заметили, но виртуальная
-                и дополненная реальность уже встречается и в нашей жизни, в том
-                числе и в браузерах. Появляется всё больше способов применять
-                эти технологии. Давайте поближе познакомимся с VR и AR и
-                посмотрим, как они разрабатываются в реале.
+                {{ $t("program.HowLongHave") }}
               </p>
             </div>
           </li>
@@ -204,21 +162,16 @@
                 alt="Фотография докладчика"
                 class="specialist__avatar"
               />
-              <p class="specialist__name">Юлия Миоцен</p>
-              <p class="specialist__position">Яндекс</p>
+              <p class="specialist__name">{{ $t("speakers.JuliaMiocen") }}</p>
+              <p class="specialist__position">{{ $t("speakers.Yandex") }}</p>
             </div>
             <div class="specialist__info">
               <p class="specialist__theme">
-                Палка, палка, огуречик. Рисуем персонажную анимацию на CSS
-                [Воркшоп]
+                {{ $t("schedule.StickStickCucumber") }}
+                [{{ $t("schedule.Workshop") }}]
               </p>
               <p class="specialist__theme-description">
-                Как собрать анимацию абстрактных объектов — более-менее понятно.
-                Но как анимировать персонажей и движение камеры, и всё это на
-                CSS? Вместе пройдём весь процесс сборки небольшой анимашки на
-                два персонажа: разбивку на ключевые кадры и планы, отрисовку
-                простых и сложных объектов, отрисовку персонажей, анимацию и
-                отладку.
+                {{ $t("program.HowToAssemble") }}
               </p>
             </div>
           </li>
@@ -231,20 +184,15 @@
                 alt="Фотография докладчика"
                 class="specialist__avatar"
               />
-              <p class="specialist__name">Андрей Мелихов</p>
+              <p class="specialist__name">{{ $t("speakers.AndreyMelikhov") }}</p>
               <p class="specialist__position">Arrival</p>
             </div>
             <div class="specialist__info">
               <p class="specialist__theme">
-                Теория и практика dependency inversion [Воркшоп]
+                {{ $t("schedule.DependencyInversionTheory") }} [{{ $t("schedule.Workshop") }}]
               </p>
               <p class="specialist__theme-description">
-                Разберёмся, что такое внедрение зависимости (dependency
-                injection), как оно связано с инверсией зависимости (dependency
-                inversion), зачем нужны IoC-контейнеры, что такое антипаттерн
-                Service Locator и почему иногда внедрение зависимостей ещё не
-                означает, что мы получили слабо связанный и легко поддерживаемый
-                код.
+                {{ $t("program.LetsFigure") }}
               </p>
             </div>
           </li>
@@ -257,21 +205,15 @@
                 alt="Фотография докладчика"
                 class="specialist__avatar"
               />
-              <p class="specialist__name">Дмитрий Николаев</p>
-              <p class="specialist__position">Победитель «Премии Алисы»</p>
+              <p class="specialist__name">{{ $t("speakers.DmitryNikolaev") }}</p>
+              <p class="specialist__position">{{ $t("speakers.AliceAwardWinner") }}</p>
             </div>
             <div class="specialist__info">
               <p class="specialist__theme">
-                Создание приложений для голосовых ассистентов: тренды,
-                возможности, разработка [Воркшоп]
+                {{ $t("schedule.CreationOfApplications") }} [{{ $t("schedule.Workshop") }}]
               </p>
               <p class="specialist__theme-description">
-                Какой интерфейс можно назвать самым естественным? Конечно же,
-                голос! За голосовыми приложениями не только будущее, но и
-                настоящее. На воркшопе я расскажу об основных возможностях
-                навыков Алисы и поделюсь опытом создания голосовых приложений. А
-                все, кто пишут на Node.js, смогут разработать прототип
-                собственного навыка Алисы.
+                {{ $t("program.WhatIsTheMost") }}
               </p>
             </div>
           </li>

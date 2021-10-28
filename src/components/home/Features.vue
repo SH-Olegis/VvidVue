@@ -1,29 +1,24 @@
 <template>
   <section class="features">
     <div class="features__container">
-      <h2 class="features__title">Что вас ждет:</h2>
+      <h2 class="features__title">{{ $t("features.WhatAwaitsYou") }}</h2>
       <ul class="features__list">
         <li class="features__list-item">
-          <h3>Топовые спикеры</h3>
+          <h3>{{ $t("features.TopSpeakers") }}</h3>
           <p>
-            Лучшие спикеры из крупных IT-компаний поделятся своими best
-            practices, которые сами используют в процессе разработки.
+            {{ $t("features.TheBestSpeakers")}}
           </p>
         </li>
         <li class="features__list-item">
-          <h3>Воркшопы</h3>
+          <h3>{{ $t("features.Workshops") }}</h3>
           <p>
-            Узнаете больше о сложной анимации в CSS, разберётесь, что такое
-            инверсия зависимостей, а также напишите своё приложение для
-            голосовых ассистентов.
+            {{ $t("features.LearnMoreAbout") }}
           </p>
         </li>
         <li class="features__list-item">
-          <h3>Атмосфера</h3>
+          <h3>{{ $t("features.Atmosphere") }}</h3>
           <p>
-            Сотни неравнодушных разработчиков и разработчиц встретятся вместе,
-            чтобы посмотреть доклады от классных спикеров и поучаствовать в
-            воркшопах.
+            {{ $t("features.HundredsOf") }}
           </p>
         </li>
       </ul>

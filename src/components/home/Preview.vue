@@ -5,14 +5,14 @@
         <div class="preview__text-wrapper">
           <div class="preview__info-wrapper">
             <div class="preview__first-line">
-              <p class="preview__conf-small">международная конференция</p>
+              <p class="preview__conf-small">{{ $t("preview.InternationalConference") }}</p>
               <p>IT</p>
             </div>
             <p>
               <span class="preview__purple">20</span
               ><span class="preview__blue">21</span>
             </p>
-            <p>год</p>
+            <p>{{ $t("preview.Year") }}</p>
           </div>
           <div class="preview__logo-wrapper">
             <svg class="preview__logo" width="720" height="340">
@@ -21,10 +21,10 @@
           </div>
         </div>
         <div class="preview__link-wrapper">
-          <a href="./registration.html" class="preview__link"
-            >Зарегистрироваться</a
+          <router-link :to="{ name: 'Registration', params: { lang: this.$i18n.locale } }" class="preview__link"
+            >{{ $t("preview.RegisterNow") }}</router-link
           >
-          <p class="preview__date">&lt; 10 декабря ></p>
+          <p class="preview__date">&lt; 10 {{ $t("preview.December") }}  ></p>
         </div>
       </div>
     </div>
@@ -46,8 +46,8 @@ export default {
   margin-top: -111px;
   padding-top: 250px;
   padding-bottom: 30px;
-  background: #4a4949 url("../../assets/1x/preview-bg-desktop@1x.png") no-repeat
-    0 0;
+  background: #4a4949 url('../../assets/1x/preview-bg-desktop@1x.png') no-repeat 0
+  0;
   background-size: cover;
 
   @media all and(max-width: $screen-sm-max) {
@@ -55,7 +55,7 @@ export default {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
@@ -72,6 +72,15 @@ export default {
 .preview__text-wrapper {
   display: flex;
   margin-bottom: 50px;
+
+  @media all and(max-width: $screen-sm-max) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  @media all and(max-width: $screen-xs-max) {
+    align-items: flex-start;
+  }
 }
 
 .preview__info-wrapper {
@@ -80,10 +89,12 @@ export default {
   justify-content: center;
   align-items: flex-end;
   margin-right: 50px;
-  @include font(700, 64px, 75px, "Roboto");
+  @include font(700, 64px, 75px, 'Roboto');
   color: #ffffff;
+
   @media all and (max-width: $screen-sm-max) {
-    @include font(700, 20px, 30px, "Roboto");
+    margin-right: 0;
+    @include font(700, 45px, 40px, "Roboto");
     align-items: inherit;
   }
 }
@@ -96,7 +107,7 @@ export default {
   display: flex;
   align-items: center;
   @media all and (max-width: $screen-sm-max) {
-    display: block;
+    margin-bottom: 10px;
   }
 }
 
@@ -107,8 +118,9 @@ p.preview__conf-small {
   line-height: 23px;
   text-align: right;
   @media all and (max-width: $screen-sm-max) {
+    width: min-content;
     text-align: left;
-    @include font(400, 15px, 18px, "Roboto");
+    @include font(400, 19px, 20px, "Roboto");
   }
 }
 
@@ -124,8 +136,18 @@ p.preview__conf-small {
   color: $color-blue;
 }
 
+.preview__logo-wrapper {
+  @media all and (max-width: $screen-sm-max) {
+    min-width: 200px;
+  }
+}
+
 .preview__logo {
   @include size(100%, 340px);
+
+  @media all and (max-width: $screen-sm-max) {
+    height: 180px;
+  }
 }
 
 .preview__link-wrapper {
@@ -140,7 +162,7 @@ p.preview__conf-small {
   margin-bottom: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include font(500, 26px, 35px, "Roboto");
+  @include font(500, 26px, 35px, 'Roboto');
   text-align: center;
   color: #ffffff;
   background-color: #a95cf2;
@@ -148,16 +170,17 @@ p.preview__conf-small {
     width: 250px;
     padding-top: 5px;
     padding-bottom: 5px;
-    @include font(500, 18px, 25px, "Roboto");
+    @include font(500, 18px, 25px, 'Roboto');
   }
 }
 
 .preview__date {
   @include clear-block;
-  @include font(400, 24px, 28px, "Roboto");
+  @include font(400, 24px, 28px, 'Roboto');
   color: #a95cf2;
   @media all and (max-width: $screen-sm-max) {
-    @include font(400, 17px, 28px, "Roboto");
+    @include font(400, 17px, 28px, 'Roboto');
   }
 }
+
 </style>

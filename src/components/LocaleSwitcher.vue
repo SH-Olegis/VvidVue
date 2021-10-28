@@ -1,9 +1,9 @@
 <template>
-  <select v-model="$i18n.locale">
-    <option v-for="locale in locales" :key="locale" @click="switchLocale(locale)">
-      {{ locale }}
-    </option>
-  </select>
+  <ul>
+    <li @click="switchLocale(currentLang)">
+      {{ currentLang }}
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -23,13 +23,25 @@ export default {
       locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
     };
   },
+  computed: {
+    currentLang() {
+      return this.$i18n.locale === 'en' ? 'ru' : 'en'
+    }
+  }
 };
 </script>
 
 <style scoped  lang="scss">
 @import "@/index.scss";
 
-select {
+ul {
+  @media all and (max-width: $screen-sm) {
+    padding-left: 0;
+  }
+}
+
+li {
+  list-style: none;
   padding: 0 10px 0 20px;
   @include font(400, 19px, 25px, $main-font);
   color: #ffffff;

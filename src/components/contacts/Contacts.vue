@@ -2,98 +2,22 @@
   <section class="contacts">
     <div class="contacts__container">
       <ul class="contacts__list">
-        <h1 class="contacts__title">Контакты</h1>
+        <h1 class="contacts__title">{{ $t("contacts.Title") }}</h1>
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
+                src="../../assets/1x/contacts-paramonov.jpg"
+                width="340"
+                height="260"
+                alt="Аватар автора"
+                class="author__avatar"
             />
           </div>
           <div class="author__info">
-            <p class="author__name">Алмаз Александра Алексеевна</p>
-            <p class="author__post">дизайнер</p>
-            <a href="mailto:almaz@sfedu.ru" class="author__email"
-              >almaz@sfedu.ru</a
-            >
-            <a href="tel:+79612929169" class="author__phone">89612929169</a>
-          </div>
-        </li>
-        <li class="contacts__item author">
-          <div class="author__avatar-wrapper">
-            <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
-            />
-          </div>
-          <div class="author__info">
-            <p class="author__name">Костикова Юлиана Александровна</p>
-            <p class="author__post">дизайнер</p>
-            <a href="mailto:kostikova@sfedu.ru" class="author__email">
-              kostikova@sfedu.ru</a
-            >
-            <a href="tel:+79612929169" class="author__phone">89612929169</a>
-          </div>
-        </li>
-        <li class="contacts__item author">
-          <div class="author__avatar-wrapper">
-            <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
-            />
-          </div>
-          <div class="author__info">
-            <p class="author__name">Болдырев Владислав Николаевич</p>
-            <p class="author__post">back-end разработчик</p>
-            <a href="mailto:boldurev@sfedu.ru" class="author__email"
-              >boldurev@sfedu.ru</a
-            >
-            <a href="tel:+79612929169" class="author__phone">89612929169</a>
-          </div>
-        </li>
-        <li class="contacts__item author">
-          <div class="author__avatar-wrapper">
-            <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
-            />
-          </div>
-          <div class="author__info">
-            <p class="author__name">Донская Анастасия Антоновна</p>
-            <p class="author__post">back-end разработчик</p>
-            <a href="mailto:donskaya@sfedu.ru" class="author__email"
-              >donskaya@sfedu.ru</a
-            >
-            <a href="tel:+79612929169" class="author__phone">89612929169</a>
-          </div>
-        </li>
-        <li class="contacts__item author">
-          <div class="author__avatar-wrapper">
-            <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
-            />
-          </div>
-          <div class="author__info">
-            <p class="author__name">Кузубова Анна Сергеевна</p>
-            <p class="author__post">back-end разработчик</p>
-            <a href="mailto:kuzubova@sfedu.ru" class="author__email">
-              kuzubova@sfedu.ru
+            <p class="author__name">{{ $t("contacts.Paramonov") }}</p>
+            <p class="author__post">{{ $t("contacts.ParamonovPost") }}</p>
+            <a href="mailto:paramonov@sfedu.ru" class="author__email">
+              paramonov@sfedu.ru
             </a>
             <a href="tel:+79612929169" class="author__phone">89612929169</a>
           </div>
@@ -101,35 +25,16 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
+                src="../../assets/1x/contacts-shevchenko.jpg"
+                width="340"
+                height="260"
+                alt="Аватар автора"
+                class="author__avatar"
             />
           </div>
           <div class="author__info">
-            <p class="author__name">Цыбенко Даниил Романович</p>
-            <p class="author__post">front-end разработчик</p>
-            <a href="mailto:cubenko@sfedu.ru" class="author__email">
-              cubenko@sfedu.ru
-            </a>
-            <a href="tel:+79612929169" class="author__phone">89612929169</a>
-          </div>
-        </li>
-        <li class="contacts__item author">
-          <div class="author__avatar-wrapper">
-            <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
-              width="340"
-              height="260"
-              alt="Аватар автора"
-              class="author__avatar"
-            />
-          </div>
-          <div class="author__info">
-            <p class="author__name">Шевченко Олег Викторович</p>
-            <p class="author__post">front-end разработчик</p>
+            <p class="author__name">{{ $t("contacts.Shevchenko") }}</p>
+            <p class="author__post">{{ $t("contacts.ShevchenkoPost") }}</p>
             <a href="mailto:shevchenko@sfedu.ru" class="author__email">
               shevchenko@sfedu.ru
             </a>
@@ -139,7 +44,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-almaz.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -147,10 +52,105 @@
             />
           </div>
           <div class="author__info">
-            <p class="author__name">Парамонов Роман Евгеньевич</p>
-            <p class="author__post">front-end разработчик</p>
-            <a href="mailto:paramonov@sfedu.ru" class="author__email">
-              paramonov@sfedu.ru
+            <p class="author__name">{{ $t("contacts.Almaz") }}</p>
+            <p class="author__post">{{ $t("contacts.AlmazPost") }}</p>
+            <a href="mailto:almaz@sfedu.ru" class="author__email"
+              >almaz@sfedu.ru</a
+            >
+            <a href="tel:+79612929169" class="author__phone">89612929169</a>
+          </div>
+        </li>
+        <li class="contacts__item author">
+          <div class="author__avatar-wrapper">
+            <img
+              src="../../assets/1x/contacts-kostikova.jpg"
+              width="340"
+              height="260"
+              alt="Аватар автора"
+              class="author__avatar"
+            />
+          </div>
+          <div class="author__info">
+            <p class="author__name">{{ $t("contacts.Kostikova") }}</p>
+            <p class="author__post">{{ $t("contacts.KostikovaPost") }}</p>
+            <a href="mailto:kostikova@sfedu.ru" class="author__email">
+              kostikova@sfedu.ru</a
+            >
+            <a href="tel:+79612929169" class="author__phone">89612929169</a>
+          </div>
+        </li>
+        <li class="contacts__item author">
+          <div class="author__avatar-wrapper">
+            <img
+                src="../../assets/1x/contacts-donskaya.jpg"
+                width="340"
+                height="260"
+                alt="Аватар автора"
+                class="author__avatar"
+            />
+          </div>
+          <div class="author__info">
+            <p class="author__name">{{ $t("contacts.Donskaya") }}</p>
+            <p class="author__post">{{ $t("contacts.DonskayaPost") }}</p>
+            <a href="mailto:donskaya@sfedu.ru" class="author__email"
+            >donskaya@sfedu.ru</a
+            >
+            <a href="tel:+79612929169" class="author__phone">89612929169</a>
+          </div>
+        </li>
+        <li class="contacts__item author">
+          <div class="author__avatar-wrapper">
+            <img
+                src="../../assets/1x/contacts-kuzubova.jpg"
+                width="340"
+                height="260"
+                alt="Аватар автора"
+                class="author__avatar"
+            />
+          </div>
+          <div class="author__info">
+            <p class="author__name">{{ $t("contacts.Kuzubova") }}</p>
+            <p class="author__post">{{ $t("contacts.KuzubovaPost") }}</p>
+            <a href="mailto:kuzubova@sfedu.ru" class="author__email">
+              kuzubova@sfedu.ru
+            </a>
+            <a href="tel:+79612929169" class="author__phone">89612929169</a>
+          </div>
+        </li>
+        <li class="contacts__item author">
+          <div class="author__avatar-wrapper">
+            <img
+              src="../../assets/1x/contacts-boldirev.jpg"
+              width="340"
+              height="260"
+              alt="Аватар автора"
+              class="author__avatar"
+            />
+          </div>
+          <div class="author__info">
+            <p class="author__name">{{ $t("contacts.Boldirev") }}</p>
+            <p class="author__post">{{ $t("contacts.BoldirevPost") }}</p>
+            <a href="mailto:boldurev@sfedu.ru" class="author__email"
+              >boldurev@sfedu.ru</a
+            >
+            <a href="tel:+79612929169" class="author__phone">89612929169</a>
+          </div>
+        </li>
+        <li class="contacts__item author">
+          <div class="author__avatar-wrapper">
+            <img
+              src="../../assets/1x/contacts-oleinikov.jpg"
+              width="340"
+              height="260"
+              alt="Аватар автора"
+              class="author__avatar"
+            />
+          </div>
+          <div class="author__info">
+            <p class="author__name">{{ $t("contacts.Oleinikov") }}</p>
+            <p class="author__post">{{ $t("contacts.OleinikovPost") }}</p>
+            <a href="mailto:oleinikov@sfedu.ru" class="author__email">
+              oleinikov@sfedu.ru
             </a>
             <a href="tel:+79612929169" class="author__phone">89612929169</a>
           </div>
@@ -207,7 +207,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   background: #ffffff;
-  opacity: 0.9;
   padding: 20px 40px;
   @media all and(max-width: $screen-sm-max) {
     padding-top: 0;
@@ -236,7 +235,7 @@ export default {
   max-width: 260px;
   margin-right: 20px;
   @media all and(max-width: $screen-sm-max) {
-    width: 90px;
+    width: 200px;
     margin-right: 0;
   }
 }

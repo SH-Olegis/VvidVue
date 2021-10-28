@@ -13,23 +13,16 @@
         ></iframe>
       </div>
       <p class="capital__text">
-        Мы приглашаем вас посетить международную конференцию по Web-разработке в
-        городе Таганрог.
+        {{ $t("capital.Greetings") }}
       </p>
       <p class="capital__text">
-        Премьера фильма «IT-столица России. Таганрог» под эгидой Института
-        компьютерных технологий и информационной безопасности ЮФУ состоялась 7
-        августа. Героями стали представители IT-бизнеса - выпускники Южного
-        федерального университета и власти г. Таганрога.
+        {{ $t("capital.MoviePremiere") }}
       </p>
       <p class="capital__text">
-        Этот город закладывался его основателем Петром 1 как будущая столица
-        России. Однако, в 1698 г. этого не случилось. Мог ли предполагать
-        Великий Царь, что спустя 300 с небольшим лет этот город столицей
-        все-таки станет.
+        {{ $t("capital.CityFounder") }}
       </p>
-      <p class="capital__text">Друзья, добро пожаловать в Таганрог.</p>
-      <p class="capital__text">Добро пожаловать в IT-столицу России.</p>
+      <p class="capital__text">{{ $t("capital.WelcomeToTaganrog") }}</p>
+      <p class="capital__text">{{ $t("capital.WelcomeToITCapital") }}</p>
     </div>
   </section>
 </template>
@@ -82,7 +75,7 @@ export default {
 .capital__text {
   @include clear-block;
   margin-bottom: 35px;
-  @include font(400, 22px, 29px, $main-font);
+  @include font(400, 22px, 29px, "Open Sans");
   color: #ffffff;
   @media all and(max-width: $screen-sm-max) {
     font-size: 12px;

@@ -23,30 +23,30 @@
       </div>
     </div> -->
     <div class="registration-form">
-      <h3 class="registration-form__title">Регистрация</h3>
+      <h3 class="registration-form__title">{{ $t("header.Registration") }}</h3>
       <div class="registration-form__switch js-toggle-form-reg">
         <button
-          class="registration-form__btn js-btn-toggle active"
-          data-toggle-selector="guest"
+            @click="speaker = false"
+          :class="[{active: !speaker},'registration-form__btn js-btn-toggle']"
         >
-          Гость
+          {{ $t("registration.Guest") }}
         </button>
         <button
-          class="registration-form__btn js-btn-toggle"
-          data-toggle-selector="speaker"
+            @click="speaker = true"
+            :class="[{active: speaker},'registration-form__btn js-btn-toggle']"
         >
-          Спикер
+          {{ $t("registration.Speaker") }}
         </button>
       </div>
       <form action="" class="registration-form__form">
         <div class="registration-form__user-form">
-          <div class="registration-form__speaker-form toggle" id="guest">
+          <div class="registration-form__speaker-form toggle" id="guest" v-if="!speaker">
             <div class="registration-form__control">
-              <label for="firstname">Имя</label>
+              <label for="firstname">{{  $t("registration.Name") }}</label>
               <input type="text" id="firstname" />
             </div>
             <div class="registration-form__control">
-              <label for="lastname">Фамилия</label>
+              <label for="lastname">{{  $t("registration.Surname") }}</label>
               <input type="text" id="lastname" />
             </div>
             <div class="registration-form__control">
@@ -54,20 +54,17 @@
               <input type="email" id="email" />
             </div>
           </div>
-          <div
-            class="registration-form__speaker-form toggle hidden"
-            id="speaker"
-          >
+          <div class="registration-form__speaker-form toggle" id="speaker" v-else>
             <div class="registration-form__control">
-              <label for="firstname">Имя</label>
+              <label for="firstname">{{  $t("registration.Name") }}</label>
               <input type="text" id="firstname" />
             </div>
             <div class="registration-form__control">
-              <label for="lastname">Фамилия</label>
+              <label for="lastname">{{  $t("registration.Surname") }}</label>
               <input type="text" id="lastname" />
             </div>
             <div class="registration-form__control">
-              <label for="phone">Телефон</label>
+              <label for="phone">{{ $t("registration.Telephone") }}</label>
               <input type="tel" id="phone" />
             </div>
             <div class="registration-form__control">
@@ -75,7 +72,7 @@
               <input type="email" id="email" />
             </div>
             <div class="registration-form__control">
-              <label for="password">Пароль</label>
+              <label for="password">{{ $t("registration.Password") }}</label>
               <input type="password" id="password" />
             </div>
           </div>
@@ -85,7 +82,7 @@
               class="registration-form__btn registration-form__btn_submit"
               type="submit"
             >
-              Отправить
+              {{ $t("feedback.Submit") }}
             </button>
           </div>
         </div>
@@ -97,6 +94,11 @@
 <script>
 export default {
   name: "Registration",
+  data() {
+    return {
+      speaker: false
+    }
+  }
 };
 </script>
 
