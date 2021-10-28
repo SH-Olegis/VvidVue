@@ -1,21 +1,21 @@
 <template>
   <section class="additional">
     <div class="additional__container">
-      <h3 class="additional__title">Кроме того в программе:</h3>
+      <h3 class="additional__title">{{ $t("additional.AlsoInProgram") }}</h3>
       <ul class="additional__list">
         <li class="additional__list-item">
-          <p>Современные подходы для создания PWA приложений.</p>
+          <p>{{ $t("additional.ModernApproaches") }}</p>
         </li>
         <li class="additional__list-item">
-          <p>Проблемы больших JSON и их решение.</p>
+          <p>{{ $t("additional.LargeJSON") }}</p>
         </li>
         <li class="additional__list-item">
           <p>
-            Как видят сайты незрячие люди и как мы можем облегчить их жизнь.
+            {{ $t("additional.HowBlindPeople") }}
           </p>
         </li>
         <li class="additional__list-item">
-          <p>Что у JS под капотом?</p>
+          <p>{{ $t("additional.WhatsUnder") }}</p>
         </li>
       </ul>
     </div>

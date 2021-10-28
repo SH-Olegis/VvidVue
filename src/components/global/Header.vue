@@ -33,7 +33,10 @@
             >
           </li>
           <li class="header__nav-item">
-            <router-link to="/contacts" class="header__nav-link"
+            <router-link :to="{
+                name: 'Contacts',
+                params: { lang: this.$i18n.locale },
+              }" class="header__nav-link"
               >{{ $t("header.Contacts") }}</router-link
             >
           </li>

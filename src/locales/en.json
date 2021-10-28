@@ -13,7 +13,8 @@
   "preview": {
     "InternationalConference": "international Conference",
     "RegisterNow": "Register now",
-    "December": "december"
+    "December": "december",
+    "Year": "year"
   },
   "schedule": {
     "Program": "Program",
@@ -81,5 +82,47 @@
     "ThirdText": "The museum, which occupies a small wing, where A.P. Chekhov. The building was erected in the middle of the 19th century from adobe bricks on the adjoining territory that belonged to the merchant A.D. Gnutov (the outbuilding was leased). The museum exposition was launched in the 1920s, a couple of years after the opening of the exhibition, a cherry orchard was planted around the building. The Cherry Orchard.",
     "FourthTitle": "Tchaikovsky House",
     "FourthText": "A brick mansion of the late 19th century, where Ippolit Tchaikovsky lived in the period 1883–94 - the brother of the famous composer Pyotr Ilyich visited the estate several times, as evidenced by a memorial plaque attached to the wall. After the Revolution, the building alternately housed a hospital, a library, a concert hall. A separate museum room was organized in the 1970s. It works as part of a concert and exhibition complex."
+  },
+  "about": {
+    "WhereIs": "Where Is",
+    "TheCulturalProgram": "The cultural program"
+  },
+  "additional": {
+    "AlsoInProgram": "Also in the program:",
+    "ModernApproaches": "Modern approaches to creating PWA applications.",
+    "LargeJSON": "Large JSON problems and solutions.",
+    "HowBlindPeople": "How blind people see websites and how we can make their life easier.",
+    "WhatsUnder": "What's under the hood of JS?"
+  },
+  "program": {
+    "DeployedService": "\"I deployed a service worker - I need to buy a new domain\" - a well-known joke about how difficult it is to write your own caching logic. With the arrival of the sixth version of the Workbox Library for Progressive Web Applications (PWA), there is no longer a trade-off between flexibility and ease of automating network tasks. I'll show you how to get started with Workbox 6, implement typical functionality for an offline web application, and go further by adding your own caching logic.",
+    "StateManagement": "State management is a multifaceted approach that allows you to both serve small tasks for a more deterministic description of computational processes, and build entire architectures around this pattern to solve code entanglement problems and automatically optimize the computing performance of complex data streams. The implementation of state management is replete with features and pitfalls, which, depending on the task, may be relevant or not. Let's talk about this.",
+    "TheJSONFormat": "The JSON format is so simple - what can we talk about here? And I thought so until I tried to do something that is not usually done, because everything has already been invented before us (spoiler: not really). And it turns out that JSON is a rich and poorly understood world with problems to solve, and it's interesting. The talk is based on my work in this direction, in particular on the problems of JSON of large (> 100 MB) size.",
+    "OtlichayetsyaLiTo": "\nDoes the way a sighted and a blind person use the site differ, how they perceive it and manage the interface? Yes and no. What is the difference and what is the similarity? Let's look at real-life examples and discuss how barriers are created.",
+    "TheJSdevelopers": "The JS developers' toolkit has firmly established the Map / Set collections, as well as their Weak variations, which appeared five years ago. Nowadays they can be found both in popular libraries and in Node.js core. At the same time, as is customary in ECMAScript, the specification does not set strict requirements for the implementation of the standard, but only describes the behavior of collections at a high level, leaving JS engines room for maneuver. There are cases when a developer needs to understand the implementation features of the same Map to make an informed decision. This will be the topic of the report. Using V8 as an example, we will go through specific algorithms, their complexity in the notorious big O notation, memory consumption and other internal Map / Set collections. Finally, let's talk about exactly how Weak collections work and why WeakMap! == Map + WeakRef.",
+    "ExpandingReality": "Expanding reality",
+    "HowLongHave": "How long have we been watching movies about virtual reality - and how exciting it looks! You may not have noticed, but virtual and augmented reality is already found in our life, including in browsers. There are more and more ways to apply these technologies. Let's take a closer look at VR and AR and see how they are developed in real life.",
+    "HowToAssemble": "How to assemble animation of abstract objects is more or less clear. But how do you animate characters and camera movement, all in CSS? Together, we will go through the entire process of assembling a small animation into two characters: breaking down into keyframes and plans, drawing simple and complex objects, drawing characters, animating and debugging.",
+    "LetsFigure": "Let's figure out what dependency injection is, how it relates to dependency inversion, why IoC containers are needed, what the Service Locator antipattern is, and why sometimes dependency injection does not mean that we got loosely coupled and easily maintainable code.",
+    "WhatIsTheMost": "What is the most natural interface? Of course, the voice! Voice applications are not only the future, but also the present. At the workshop, I will talk about the basic capabilities of Alice's skills and share my experience in creating voice applications. And everyone who writes in Node.js can develop a prototype of Alice's own skill."
+  },
+  "attractions": {
+    "WhatSights": "What sights we will visit",
+    "StoneStaircase": "Stone staircase",
+    "TheStaircaseWas": "The staircase was built at the expense of the merchant and philanthropist GF Depaldo in 1823. The structure is 113 meters long, up to 7 meters wide and consists of more than 140 steps and 13 platforms. In the 1870s, trees were planted around the edges, in the 1930s, as a result of reconstruction, statues in the antique style were added, and a square with fountains was laid out at the base. The last restoration of the landmark was carried out in 2006.",
+    "AlferakiPalace": "Alferaki Palace",
+    "TheBuildingIs": "The building is in the Greek style, richly decorated with decorative stucco molding in the Baroque style. The building was erected in the middle of the 19th century for the wealthy city dweller ND Alferaki, according to the project of the Petersburg architect A.I.Shtakenshneider. Already at the end of the century, with the assistance of A.P. Chekhov, a local history exposition was organized on its territory, which continues to work to this day. The museum presents the most valuable archaeological collections, finds from the 11th-13th centuries, as well as interior items of noble estates.",
+    "ChekhovsHouse": "Chekhov's house",
+    "TheMuseumWhich": "The museum, which occupies a small wing, where A.P. Chekhov. The building was erected in the middle of the 19th century from adobe bricks on the adjoining territory that belonged to the merchant A.D. Gnutov (the outbuilding was leased). The museum exposition was launched in the 1920s, a couple of years after the opening of the exhibition, a cherry orchard was planted around the building. The Cherry Orchard.",
+    "TchaikovskyHouse": "Tchaikovsky House",
+    "ABrickMansion": "A brick mansion of the late 19th century, where Ippolit Tchaikovsky lived in the period 1883–94 - the brother of the famous composer Pyotr Ilyich visited the estate several times, as evidenced by a memorial plaque attached to the wall. After the Revolution, the building alternately housed a hospital, a library, a concert hall. A separate museum room was organized in the 1970s. It works as part of a concert and exhibition complex."
+  },
+  "registration": {
+    "Guest": "Guest",
+    "Speaker": "Speaker",
+    "Name": "Name",
+    "Surname": "Surname",
+    "Telephone": "Telephone",
+    "Password": "Password"
   }
 }

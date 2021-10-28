@@ -3,7 +3,7 @@
     <div class="about__container">
       <ul class="about__list">
         <li class="about__item">
-          <h2 class="about__title">Где проходит</h2>
+          <h2 class="about__title">{{ $t("about.WhereIs") }}</h2>
           <div class="about__card card">
             <div class="card__img-wrapper">
               <img
@@ -14,11 +14,11 @@
                 class="card__img"
               />
             </div>
-            <router-link :to="{ name: 'Capital', params: { lang: this.$i18n.locale } }" class="card__link">Подробнее</router-link>
+            <router-link :to="{ name: 'Capital', params: { lang: this.$i18n.locale } }" class="card__link">{{ $t("wish.MoreDetails") }}</router-link>
           </div>
         </li>
         <li class="about__item">
-          <h2 class="about__title">Культурная программа</h2>
+          <h2 class="about__title">{{ $t("about.TheCulturalProgram") }}</h2>
           <div class="about__card card">
             <div class="card__img-wrapper">
               <img

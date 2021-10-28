@@ -1,14 +1,7 @@
 <template>
   <ul>
-    <li @click="show = !show" v-show="!show">
-      {{ this.$i18n.locale }}
-    </li>
-    <li v-for="locale in locales"
-        v-show="show"
-        @click="switchLocale(locale)"
-        :key="locale"
-    >
-      {{ locale }}
+    <li @click="switchLocale(currentLang)">
+      {{ currentLang }}
     </li>
   </ul>
 </template>
@@ -18,7 +11,6 @@ export default {
   name: "LocaleSwitcher",
   methods: {
     switchLocale(locale) {
-      this.show = !this.show
       if (this.$i18n.locale !== locale) {
         this.$i18n.locale = locale;
         const to = this.$router.resolve({ params: { locale } }); // <--------------------
@@ -28,10 +20,14 @@ export default {
   },
   data() {
     return {
-      show: false,
       locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
     };
   },
+  computed: {
+    currentLang() {
+      return this.$i18n.locale === 'en' ? 'ru' : 'en'
+    }
+  }
 };
 </script>
 
