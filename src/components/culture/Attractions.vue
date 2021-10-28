@@ -1,7 +1,7 @@
 <template>
   <section class="attractions">
     <div class="attractions__container">
-      <h2 class="attractions__title">Какие достопримечательности мы посетим</h2>
+      <h2 class="attractions__title">{{ $t("culture.MainTitle") }}</h2>
       <ul class="attractions__list">
         <li class="attractions__item attraction">
           <div class="attraction__img-wrapper">
@@ -14,16 +14,8 @@
             />
           </div>
           <div class="attraction__text-wrapper">
-            <h3 class="attraction__title">Каменная лестница</h3>
-            <p class="attraction__text">
-              Лестницу построили на средства купца и мецената Г. Ф. Депальдо в
-              1823 году. В длину сооружение достигает 113 метров, в ширину
-              доходит до 7 метров и состоит из более 140 ступенек и 13 площадок.
-              В 1870-х годах по краям высадили деревья, в 1930-х в результате
-              реконструкции добавили статуи в античном стиле, а у основания
-              разбили сквер с фонтанами. Последняя реставрация
-              достопримечательности проводилась в 2006 году.
-            </p>
+            <h3 class="attraction__title">{{ $t("culture.FirstTitle") }}</h3>
+            <p class="attraction__text">{{ $t("culture.FirstText") }}</p>
           </div>
         </li>
         <li class="attractions__item attraction">
@@ -37,17 +29,8 @@
             />
           </div>
           <div class="attraction__text-wrapper">
-            <h3 class="attraction__title">Дворец Алфераки</h3>
-            <p class="attraction__text">
-              Сооружение в греческом стиле, богато украшенное декоративной
-              лепниной в манере барокко. Здание возвели в середине XIX века для
-              богатого горожанина Н. Д. Алфераки по проекту петербургского
-              архитектора А. И. Штакеншнейдера. Уже в конце столетия при
-              содействии А. П. Чехова на его территории была организована
-              краеведческая экспозиция, которая продолжает работать до сих пор.
-              В музее представлены ценнейшие археологические коллекции, находки
-              XI–XIII веков, а также предметы интерьера дворянских усадеб.
-            </p>
+            <h3 class="attraction__title">{{ $t("culture.SecondTitle") }}</h3>
+            <p class="attraction__text">{{ $t("culture.SecondText") }}</p>
           </div>
         </li>
         <li class="attractions__item attraction">
@@ -61,16 +44,8 @@
             />
           </div>
           <div class="attraction__text-wrapper">
-            <h3 class="attraction__title">Домик Чехова</h3>
-            <p class="attraction__text">
-              Музей, занимающий небольшой флигель, где появился на свет А.П.
-              Чехов. Постройка была сооружена в середине XIX столетия из
-              глинобитного кирпича на придомовой территории, принадлежавшей
-              купцу А. Д. Гнутову (флигель сдавался в аренду). Музейная
-              экспозиция заработала в 1920-х годах, через пару лет после
-              открытия выставки вокруг здания посадили вишневый сад. вишневый
-              сад.
-            </p>
+            <h3 class="attraction__title">{{ $t("culture.ThirdTitle") }}</h3>
+            <p class="attraction__text">{{ $t("culture.ThirdText") }}</p>
           </div>
         </li>
         <li class="attractions__item attraction">
@@ -84,16 +59,8 @@
             />
           </div>
           <div class="attraction__text-wrapper">
-            <h3 class="attraction__title">Дом Чайковского</h3>
-            <p class="attraction__text">
-              Кирпичный особняк конца XIX века, где в период 1883–94 года
-              проживал Ипполит Чайковский – брат знаменитого композитора Петр
-              Ильич посещал усадьбу несколько раз, о чем говори укрепленная на
-              стене памятная табличка. После Революции здании поочередно
-              размещались больница, библиотека концертный зал. Отдельную
-              комнату-музей организовали в 1970-годах. Она работает как часть
-              концертно-выставочного комплекса.
-            </p>
+            <h3 class="attraction__title">{{ $t("culture.FourthTitle") }}</h3>
+            <p class="attraction__text">{{ $t("culture.FourthText") }}</p>
           </div>
         </li>
       </ul>
@@ -113,6 +80,11 @@ export default {
 .attractions {
   padding-top: 120px;
   padding-bottom: 80px;
+
+  @media all and (max-width: $screen-sm) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 .attractions__container {
@@ -122,12 +94,23 @@ export default {
 .attractions__title {
   @include title;
   margin-bottom: 70px;
+
+  @media all and (max-width: $screen-sm) {
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 36px;
+  }
 }
 
 .attractions__list {
   @include clear-list;
   display: flex;
   flex-direction: column;
+  gap: 100px;
+
+  @media all and (max-width: $screen-sm) {
+    gap: 60px;
+  }
 }
 
 .attraction {
@@ -140,13 +123,10 @@ export default {
     border: 1px solid #cccccc;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 100px;
+  @media all and (max-width: $screen-sm) {
+    flex-direction: column;
+    align-items: center;
   }
-
-  // &:nth-of-type(2n) .attraction__text-wrapper {
-  //   background-color: #1B1C1C;
-  // }
 }
 
 .attraction__img-wrapper {
@@ -156,10 +136,19 @@ export default {
   @include size(100%, auto);
   max-width: 500px;
   margin-right: 30px;
+
+  @media all and (max-width: $screen-sm) {
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .attraction__img {
   @include size(500px, auto);
+
+  @media all and (max-width: $screen-sm) {
+    margin-right: 0;
+  }
 }
 
 .attraction__text-wrapper {
@@ -180,5 +169,10 @@ export default {
 
 .attraction__text {
   @include clear-block;
+
+  @media all and (max-width: $screen-sm) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 </style>

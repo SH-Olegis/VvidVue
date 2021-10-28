@@ -36,7 +36,7 @@ export default {
   padding-top: 215px;
   padding-bottom: 120px;
   @media all and (max-width: $screen-sm-max) {
-    padding-top: 280px;
+    padding-top: 180px;
     padding-bottom: 55px;
   }
 

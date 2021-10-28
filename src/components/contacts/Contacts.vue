@@ -6,7 +6,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-almaz.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -25,7 +25,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-kostikova.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -44,7 +44,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-boldirev.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -63,7 +63,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-donskaya.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -82,7 +82,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-kuzubova.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -101,7 +101,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-oleinikov.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -109,10 +109,10 @@
             />
           </div>
           <div class="author__info">
-            <p class="author__name">Цыбенко Даниил Романович</p>
-            <p class="author__post">front-end разработчик</p>
-            <a href="mailto:cubenko@sfedu.ru" class="author__email">
-              cubenko@sfedu.ru
+            <p class="author__name">Олейников Сергей Павлович</p>
+            <p class="author__post">контент менеджер</p>
+            <a href="mailto:oleinikov@sfedu.ru" class="author__email">
+              oleinikov@sfedu.ru
             </a>
             <a href="tel:+79612929169" class="author__phone">89612929169</a>
           </div>
@@ -120,7 +120,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-shevchenko.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -139,7 +139,7 @@
         <li class="contacts__item author">
           <div class="author__avatar-wrapper">
             <img
-              src="../../assets/1x/attractions-1-desktop@1x.png"
+              src="../../assets/1x/contacts-paramonov.jpg"
               width="340"
               height="260"
               alt="Аватар автора"
@@ -207,7 +207,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   background: #ffffff;
-  opacity: 0.9;
   padding: 20px 40px;
   @media all and(max-width: $screen-sm-max) {
     padding-top: 0;
@@ -236,7 +235,7 @@ export default {
   max-width: 260px;
   margin-right: 20px;
   @media all and(max-width: $screen-sm-max) {
-    width: 90px;
+    width: 200px;
     margin-right: 0;
   }
 }

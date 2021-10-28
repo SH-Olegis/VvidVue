@@ -72,6 +72,15 @@ export default {
 .preview__text-wrapper {
   display: flex;
   margin-bottom: 50px;
+
+  @media all and(max-width: $screen-sm-max) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  @media all and(max-width: $screen-xs-max) {
+    align-items: flex-start;
+  }
 }
 
 .preview__info-wrapper {
@@ -82,8 +91,10 @@ export default {
   margin-right: 50px;
   @include font(700, 64px, 75px, "Roboto");
   color: #ffffff;
+
   @media all and (max-width: $screen-sm-max) {
-    @include font(700, 20px, 30px, "Roboto");
+    margin-right: 0;
+    @include font(700, 45px, 40px, "Roboto");
     align-items: inherit;
   }
 }
@@ -96,7 +107,7 @@ export default {
   display: flex;
   align-items: center;
   @media all and (max-width: $screen-sm-max) {
-    display: block;
+    margin-bottom: 10px;
   }
 }
 
@@ -107,8 +118,9 @@ p.preview__conf-small {
   line-height: 23px;
   text-align: right;
   @media all and (max-width: $screen-sm-max) {
+    width: min-content;
     text-align: left;
-    @include font(400, 15px, 18px, "Roboto");
+    @include font(400, 19px, 20px, "Roboto");
   }
 }
 
@@ -124,8 +136,18 @@ p.preview__conf-small {
   color: $color-blue;
 }
 
+.preview__logo-wrapper {
+  @media all and (max-width: $screen-sm-max) {
+    min-width: 200px;
+  }
+}
+
 .preview__logo {
   @include size(100%, 340px);
+
+  @media all and (max-width: $screen-sm-max) {
+    height: 180px;
+  }
 }
 
 .preview__link-wrapper {

@@ -138,13 +138,17 @@ export default {
   padding-top: 220px;
   padding-bottom: 80px;
 
+  @media all and (max-width: $screen-sm-max) {
+    padding-top: 100px;
+  }
+
   &::before {
     content: "спикеры";
     position: absolute;
     z-index: -1;
     top: 0;
     left: 51%;
-    @include font(200, 150px, 170px, "Roboto");
+    @include font(200, 140px, 170px, "Roboto");
     text-align: center;
     letter-spacing: 0.25em;
     color: #dcd8d8;
@@ -172,6 +176,8 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
+
   @media all and (max-width: $screen-sm-max) {
     justify-content: center;
   }
@@ -181,16 +187,16 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 33.3%;
+  flex-basis: 29%;
   min-width: 250px;
 
   @media all and (max-width: $screen-sm-max) {
     margin-top: 10px;
   }
 
-  &:nth-of-type(n + 4) {
-    margin-top: 60px;
-  }
+  //&:nth-of-type(n + 4) {
+  //  margin-top: 60px;
+  //}
 }
 
 .speakers__speaker-img-wrapper {

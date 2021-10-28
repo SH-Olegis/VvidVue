@@ -61,5 +61,25 @@
     "LearnMoreAbout": "\nLearn more about complex animation in CSS, understand what dependency inversion is, and write your own voice assistant app.",
     "Atmosphere": "Atmosphere",
     "HundredsOf": "\nHundreds of passionate developers and developers will meet together to watch reports from great speakers and participate in workshops."
+  },
+  "capital": {
+    "Greetings": "We invite you to attend an international conference on Web development in the city of Taganrog.",
+    "MoviePremiere": "Premiere of the film “IT Capital of Russia. Taganrog \"under the auspices of the Institute of Computer Technologies and Information Security of the SFedU took place on August 7. The heroes were representatives of the IT business - graduates of the Southern Federal University and the authorities of Taganrog.",
+    "CityFounder": "This city was founded by its founder Peter the Great as the future capital of Russia. However, this did not happen in 1698. Could the Great Emperor have guessed that after a little over 300 years this city would nevertheless become the capital.",
+    "WelcomeToTaganrog": "Friends, welcome to Taganrog.",
+    "WelcomeToITCapital": "Welcome to the IT capital of Russia."
+  },
+  "culture": {
+    "PreviewTitle": "The cultural program",
+    "PreviewText": "In the second part of our program, we invite you to visit the famous places of the magnificent city of Taganrog together with a guide and meet the sunset off the coast of the Taganrog Bay.",
+    "MainTitle": "What sights we will visit",
+    "FirstTitle": "Stone staircase",
+    "FirstText": "The staircase was built at the expense of the merchant and philanthropist GF Depaldo in 1823. The structure is 113 meters long, up to 7 meters wide and consists of more than 140 steps and 13 platforms. In the 1870s, trees were planted around the edges, in the 1930s, as a result of reconstruction, statues in the antique style were added, and a square with fountains was laid out at the base. The last restoration of the landmark was carried out in 2006.",
+    "SecondTitle": "Alferaki Palace",
+    "SecondText": "The building is in the Greek style, richly decorated with decorative stucco molding in the Baroque style. The building was erected in the middle of the 19th century for the wealthy city dweller ND Alferaki, according to the project of the Petersburg architect A.I.Shtakenshneider. Already at the end of the century, with the assistance of A.P. Chekhov, a local history exposition was organized on its territory, which continues to work to this day. The museum presents the most valuable archaeological collections, finds from the 11th-13th centuries, as well as interior items of noble estates.",
+    "ThirdTitle": "Chekhov's house",
+    "ThirdText": "The museum, which occupies a small wing, where A.P. Chekhov. The building was erected in the middle of the 19th century from adobe bricks on the adjoining territory that belonged to the merchant A.D. Gnutov (the outbuilding was leased). The museum exposition was launched in the 1920s, a couple of years after the opening of the exhibition, a cherry orchard was planted around the building. The Cherry Orchard.",
+    "FourthTitle": "Tchaikovsky House",
+    "FourthText": "A brick mansion of the late 19th century, where Ippolit Tchaikovsky lived in the period 1883–94 - the brother of the famous composer Pyotr Ilyich visited the estate several times, as evidenced by a memorial plaque attached to the wall. After the Revolution, the building alternately housed a hospital, a library, a concert hall. A separate museum room was organized in the 1970s. It works as part of a concert and exhibition complex."
   }
 }

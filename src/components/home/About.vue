@@ -29,7 +29,7 @@
                 class="card__img"
               />
             </div>
-            <router-link :to="{ name: 'Capital', params: { lang: this.$i18n.locale } }" class="card__link">Подробнее</router-link>
+            <router-link :to="{ name: 'Culture', params: { lang: this.$i18n.locale } }" class="card__link">Подробнее</router-link>
           </div>
         </li>
       </ul>
@@ -84,6 +84,8 @@ export default {
 
   @media all and (max-width: $screen-sm-max) {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
   }
 }
 

@@ -38,6 +38,12 @@ export default {
 <style scoped  lang="scss">
 @import "@/index.scss";
 
+ul {
+  @media all and (max-width: $screen-sm) {
+    padding-left: 0;
+  }
+}
+
 li {
   list-style: none;
   padding: 0 10px 0 20px;
