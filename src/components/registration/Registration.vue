@@ -26,21 +26,21 @@
       <h3 class="registration-form__title">Регистрация</h3>
       <div class="registration-form__switch js-toggle-form-reg">
         <button
-          class="registration-form__btn js-btn-toggle active"
-          data-toggle-selector="guest"
+            @click="speaker = false"
+          :class="[{active: !speaker},'registration-form__btn js-btn-toggle']"
         >
           Гость
         </button>
         <button
-          class="registration-form__btn js-btn-toggle"
-          data-toggle-selector="speaker"
+            @click="speaker = true"
+            :class="[{active: speaker},'registration-form__btn js-btn-toggle']"
         >
           Спикер
         </button>
       </div>
       <form action="" class="registration-form__form">
         <div class="registration-form__user-form">
-          <div class="registration-form__speaker-form toggle" id="guest">
+          <div class="registration-form__speaker-form toggle" id="guest" v-if="!speaker">
             <div class="registration-form__control">
               <label for="firstname">Имя</label>
               <input type="text" id="firstname" />
@@ -54,10 +54,7 @@
               <input type="email" id="email" />
             </div>
           </div>
-          <div
-            class="registration-form__speaker-form toggle hidden"
-            id="speaker"
-          >
+          <div class="registration-form__speaker-form toggle" id="speaker" v-else>
             <div class="registration-form__control">
               <label for="firstname">Имя</label>
               <input type="text" id="firstname" />
@@ -97,6 +94,11 @@
 <script>
 export default {
   name: "Registration",
+  data() {
+    return {
+      speaker: false
+    }
+  }
 };
 </script>
 

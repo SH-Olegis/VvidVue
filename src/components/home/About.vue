@@ -14,7 +14,7 @@
                 class="card__img"
               />
             </div>
-            <a href="./capital.html" class="card__link">Подробнее</a>
+            <router-link :to="{ name: 'Capital', params: { lang: this.$i18n.locale } }" class="card__link">Подробнее</router-link>
           </div>
         </li>
         <li class="about__item">
@@ -29,7 +29,7 @@
                 class="card__img"
               />
             </div>
-            <a href="./culture.html" class="card__link">Подробнее</a>
+            <router-link :to="{ name: 'Capital', params: { lang: this.$i18n.locale } }" class="card__link">Подробнее</router-link>
           </div>
         </li>
       </ul>

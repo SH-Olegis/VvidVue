@@ -21,8 +21,8 @@
           </div>
         </div>
         <div class="preview__link-wrapper">
-          <a href="./registration.html" class="preview__link"
-            >{{ $t("preview.RegisterNow") }}</a
+          <router-link :to="{ name: 'Registration', params: { lang: this.$i18n.locale } }" class="preview__link"
+            >{{ $t("preview.RegisterNow") }}</router-link
           >
           <p class="preview__date">&lt; 10 {{ $t("preview.December") }}  ></p>
         </div>

@@ -16,7 +16,7 @@
           <p class="wish__text">
             {{ $t("wish.IfYouAre") }}
           </p>
-          <a href="./registration.html" class="wish__link">{{ $t("wish.MoreDetails") }}</a>
+          <router-link :to="{ name: 'Registration', params: { lang: this.$i18n.locale } }" class="wish__link">{{ $t("wish.MoreDetails") }}</router-link>
         </div>
       </div>
     </div>

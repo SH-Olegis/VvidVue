@@ -10,7 +10,7 @@
         <ul class="header__nav">
           <li class="header__nav-item">
             <router-link
-              :to="{ name: '', params: { lang: this.$i18n.locale } }"
+              :to="{ name: 'Home', params: { lang: this.$i18n.locale } }"
               class="header__nav-link"
               >{{ $t("header.Main") }}</router-link
             >
@@ -29,14 +29,15 @@
                 params: { lang: this.$i18n.locale },
               }"
               class="header__nav-link"
-              >Регистрация</router-link
+              >{{ $t("header.Registration") }}</router-link
             >
           </li>
           <li class="header__nav-item">
             <router-link to="/contacts" class="header__nav-link"
-              >Контакты</router-link
+              >{{ $t("header.Contacts") }}</router-link
             >
           </li>
+          <LocaleSwitcher />
         </ul>
       </nav>
     </div>
@@ -44,8 +45,13 @@
 </template>
 
 <script>
+import LocaleSwitcher from "../LocaleSwitcher";
+
 export default {
   name: "Header",
+  components: {
+    LocaleSwitcher
+  }
 };
 </script>
 
