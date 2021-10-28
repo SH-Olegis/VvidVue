@@ -11,7 +11,7 @@
     "WebsProvidesWorkshops": "WebS provides workshops and talks on technologies from front-end to back-end, an opportunity to communicate with those who create the world of JavaScript and participate in behind-the-scenes conversations, where the future is born."
   },
   "preview": {
-    "InternationalConference": "international Conference",
+    "InternationalConference": "international conference",
     "RegisterNow": "Register now",
     "December": "december",
     "Year": "year"
@@ -124,5 +124,24 @@
     "Surname": "Surname",
     "Telephone": "Telephone",
     "Password": "Password"
+  },
+  "contacts": {
+    "Title": "Contacts",
+    "Paramonov": "Paramonov Roman",
+    "ParamonovPost": "Front-end developer",
+    "Shevchenko": "Shevchenko Oleg",
+    "ShevchenkoPost": "Front-end developer",
+    "Almaz": "Almaz Alexandra",
+    "AlmazPost": "Designer",
+    "Kostikova": "Kostikova Yuliana",
+    "KostikovaPost": "Designer",
+    "Donskaya": "Donskaya Anastasia",
+    "DonskayaPost": "Back-end developer",
+    "Kuzubova": "Kuzubova Anna",
+    "KuzubovaPost": "Back-end developer",
+    "Boldirev": "Boldyrev Vladislav",
+    "BoldirevPost": "Back-end developer",
+    "Oleinikov": "Oleinikov Sergei",
+    "OleinikovPost": "Content manager"
   }
 }

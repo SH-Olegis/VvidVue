@@ -124,5 +124,24 @@
     "Surname": "Фамилия",
     "Telephone": "Телефон",
     "Password": "Пароль"
+  },
+  "contacts": {
+    "Title": "Контакты",
+    "Paramonov": "Парамонов Роман",
+    "ParamonovPost": "Front-end разработчик",
+    "Shevchenko": "Шевченко Олег",
+    "ShevchenkoPost": "Front-end разработчик",
+    "Almaz": "Алмаз Александра",
+    "AlmazPost": "Дизайнер",
+    "Kostikova": "Костикова Юлиана",
+    "KostikovaPost": "Дизайнер",
+    "Donskaya": "Донская Анастасия",
+    "DonskayaPost": "Back-end разработчик",
+    "Kuzubova": "Кузубова Анна",
+    "KuzubovaPost": "Back-end разработчик",
+    "Boldirev": "Болдырев Владислав",
+    "BoldirevPost": "Back-end разработчик",
+    "Oleinikov": "Олейников Сергей",
+    "OleinikovPost": "Контент менеджер"
   }
 }
